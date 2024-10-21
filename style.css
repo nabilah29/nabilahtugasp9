@@ -1,0 +1,139 @@
+* {
+padding: 0;
+margin: 0;
+}
+
+body{
+    background-color: grey;
+}
+
+#main-container{
+    background-color: white;
+    width: 980px;
+    margin: auto;
+}
+main {
+    width: 650px;
+    float: left;
+    border-left: 3px solid lightgray;
+    padding-left: 20px;
+}
+aside {
+    width: 300px;
+    float: left;
+}
+aside ul li a {
+    display: block;
+    width: 250px;
+    margin: auto;
+    text-align: center;
+    padding: 20px 0;
+    border: 1px solid grey;
+    margin-bottom: 20px;
+}
+article{
+    width: 300px;
+    float: left;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+article img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border: 1px solid grey;
+    padding: 5px;
+}
+article p {
+    width: 100%;
+    text-align: center;
+}
+.clear-fix {
+    clear: both;
+}
+ul li {
+    list-style: none;
+}
+nav ul {
+    width: 260px;
+    margin: auto;
+}
+nav ul li {
+    float: left;
+    display: block;
+    margin-right: 20px;
+}
+header h1 { 
+    text-align: center;
+    padding: 20px;
+}
+header h2 {
+    text-align: center;
+    padding: 5px;
+}
+nav {
+    padding: 10px;
+    background-color: lightgray;
+    margin-bottom: 20px;
+}
+footer {
+    padding: 20x;
+    background-color: black;
+}
+footer p {
+    color: white;
+    text-align: center;
+}
+@media (max-width:600px) {
+    #main-container {
+        width: 80%;
+    }
+    main {
+        width: 100%;
+        float: none;
+        margin: auto;
+        padding-left: 0;
+        border-left: none;
+    }
+    aside {
+        width: 100%;
+        float: none;
+        margin: auto;
+    }
+    article {
+        width: 70%;
+        float: none;
+        margin: auto;
+    }
+    article p, 
+    article img {
+        width: 100%;
+    }
+}
+@media (min-width: 601px) and (max-width:1000px){
+    #main-container {
+    width: 90%;
+    }
+
+    aside {
+    width: 20%;    
+    }
+
+    main {
+    width: 75%;
+    }
+    aside ul li a {
+    width: 80%;
+    }
+    article {
+    width: 46%;
+    margin-right: 15px;
+    }
+    article img, article p {
+    width: 100%;
+    }
+    article img {
+        border: none;
+        padding: 0;
+    }
+}
